@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Annoy Users</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <script>
+    $(document).ready(function() {
+      $(".button").mouseenter(function() {
+          $(this).addClass('newpos');
+      });
+
+      $(".button").mouseleave(function() {
+        $(this).removeClass('newpos');
+      });
+    });
+  </script>
+
+  <style>
+    body {
+      position:relative;
+      height:100vh;
+      width:100vw;
+    }
+
+    .button {
+      position:absolute;
+      left:50%;
+      top:50%;
+      transform:translate(-50%, -50%);
+      border:2px solid black;
+      padding:5px 10px;
+      font-size:2rem;
+    }
+
+    .newpos {
+      left:25%;
+      top:25%;
+    }
+
+    a {
+      font-size:1.2rem;
+      color:white;
+      background:black;
+      padding:5px 10px;
+      text-decoration: none;
+    }
+  </style>
+</head>
+
+<body>
+  <a href="./index.html">Back to Home</a>
+  <div class="button">Click me!</div>
+</body>
+
+</html>

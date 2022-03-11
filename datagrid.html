@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Datagrid</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <script>
+    $(document).ready(function() {
+      $(".remove-button").click(function() {
+        $(this).closest("tr").remove();
+      });
+    });
+  </script>
+
+  <style>
+    body {
+      position:relative;
+      height:100vh;
+      width:100vw;
+    }
+
+    table {
+      position:absolute;
+      left:50%;
+      top:50%;
+      transform:translate(-50%, -50%);
+      border:2px solid black;
+      padding:5px 10px;
+      display:block;
+    }
+
+    th, td {
+      border:1px solid black;
+      padding:5px;
+    }
+
+    a {
+      font-size:1.2rem;
+      color:white;
+      background:black;
+      padding:5px 10px;
+      text-decoration: none;
+    }
+
+    .remove-button {
+      cursor:pointer;
+      background:black;
+      color:white;
+    }
+  </style>
+</head>
+
+<body>
+  <a href="./index.html">Back to Home</a>
+  <div class="grid-container">
+    <table>
+      <tr>
+        <th>Game</th>
+        <th>Release Year</th>
+        <th>Metacritic Score</th>
+        <th>Button</th>
+      </tr>
+
+      <tr>
+        <td>Demon's Souls</td>
+        <td>2009</td>
+        <td>89</td>
+        <td class="remove-button">Remove</td>
+      </tr>
+
+      <tr>
+        <td>Dark Souls</td>
+        <td>2011</td>
+        <td>89</td>
+        <td class="remove-button">Remove</td>
+      </tr>
+
+      <tr>
+        <td>Dark Souls II</td>
+        <td>2014</td>
+        <td>91</td>
+        <td class="remove-button">Remove</td>
+      </tr>
+
+      <tr>
+        <td>Bloodborne</td>
+        <td>2015</td>
+        <td>92</td>
+        <td class="remove-button">Remove</td>
+      </tr>
+
+      <tr>
+        <td>Dark Souls III</td>
+        <td>2016</td>
+        <td>89</td>
+        <td class="remove-button">Remove</td>
+      </tr>
+
+      <tr>
+        <td>Sekiro: Shadows Die Twice</td>
+        <td>2019</td>
+        <td>91</td>
+        <td class="remove-button">Remove</td>
+      </tr>
+
+      <tr>
+        <td>Elden Ring</td>
+        <td>2022</td>
+        <td>96</td>
+        <td class="remove-button">Remove</td>
+      </tr>
+    </table>
+  </div>
+</body>
+
+</html>
